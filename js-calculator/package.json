@@ -4,8 +4,9 @@
   "description": "javascript calculator",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon start.js",
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "keywords": [
     "calculator",
@@ -19,5 +20,10 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
   }
 }
